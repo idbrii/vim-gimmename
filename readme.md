@@ -46,6 +46,34 @@ def skilled_unicorn():
 ```
 
 
+Customization
+=============
+
+Set the default style in your vimrc:
+```vim
+let g:gimmename_style = 'snakecase'
+let g:gimmename_style = 'camelcase'
+let g:gimmename_style = 'mixedcase'
+```
+
+Override styles in your ftplugins:
+```vim
+" in ~/.vim/ftplugin/python.vim
+let b:gimmename_style = 'snakecase'
+
+" in ~/.vim/ftplugin/cs.vim
+let b:gimmename_style = 'mixedcase'
+```
+
+Define your own mappings in your vimrc:
+```vim
+let g:gimmename_no_mappings = 1
+imap <C-\><C-\> <Plug>(gimmename-current-style)
+imap <C-\><C-s> <Plug>(gimmename-snakecase)
+imap <C-\><C-d> <Plug>(gimmename-camelcase)
+imap <C-\><C-m> <Plug>(gimmename-mixedcase)
+```
+
 Inspiration
 ===========
 

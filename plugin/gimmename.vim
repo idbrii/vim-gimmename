@@ -28,8 +28,8 @@ inoremap <expr> <Plug>(gimmename-mixedcase) <SID>gimmename('mixedcase')
 if !exists("g:gimmename_no_mappings") || !g:gimmename_no_mappings
     " Copy paste this block to your vimrc to customize mappings.
     " let g:gimmename_no_mappings = 1
-    imap <expr> <C-x><C-z><C-z> <Plug>(gimmename-current-style)
-    imap <expr> <C-x><C-z><C-s> <Plug>(gimmename-snakecase)
-    imap <expr> <C-x><C-z><C-d> <Plug>(gimmename-camelcase)
-    imap <expr> <C-x><C-z><C-m> <Plug>(gimmename-mixedcase)
+    imap <C-x><C-z><C-z> <Plug>(gimmename-current-style)
+    imap <C-x><C-z><C-s> <Plug>(gimmename-snakecase)
+    imap <C-x><C-z><C-d> <Plug>(gimmename-camelcase)
+    imap <C-x><C-z><C-m> <Plug>(gimmename-mixedcase)
 endif
